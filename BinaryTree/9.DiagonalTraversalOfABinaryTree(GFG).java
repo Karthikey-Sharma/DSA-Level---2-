@@ -1,7 +1,7 @@
 // link :-https://practice.geeksforgeeks.org/problems/diagonal-traversal-of-binary-tree/1#
 // { Driver Code Starts
 //Initial Template for Java
-
+// Time Complexity - O(n)
 //Contributed by Sudarshan Sharma
 import java.util.LinkedList; 
 import java.util.Queue; 

@@ -1,5 +1,6 @@
 // link :-https://practice.geeksforgeeks.org/problems/diagonal-traversal-of-binary-tree/1#
 // { Driver Code Starts
+// Time Complexity - O(n)
 #include <bits/stdc++.h>
 using namespace std;
 #define MAX_HEIGHT 100000
