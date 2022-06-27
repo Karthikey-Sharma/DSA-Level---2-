@@ -44,3 +44,33 @@ class Solution
         return succ;
     }
 }
+
+//////////////********************(ALTERNATE SOLUTION)****************************////////////////////////////////
+class Solution
+{
+    // returns the inorder successor of the Node x in BST (rooted at 'root')
+	public Node inorderSuccessor(Node root,Node x)
+    {
+        Node succ = null;
+        if(x.right != null) {
+            succ = x.right;
+            while(succ.left != null) {
+                succ = succ.left;
+            }
+            return succ;
+        }
+        
+        while(root != null) {
+            if(x.data > root.data){
+                root = root.right;
+            }
+            else if(x.data < root.data) {
+                succ = root;
+                root = root.left;
+            }else {
+                break;
+            }
+        }
+        return succ;
+    }
+}
