@@ -2,6 +2,7 @@ class Solution {
 public:
     int len = 0;
     bool flag = true;
+    
     void dfs(int r , int c , vector<vector<int>>& grid , vector<vector<bool>>& visited) {
         if(r < 0 || c < 0 || r >= grid.size() || c >= grid[0].size()){
             flag = false;
